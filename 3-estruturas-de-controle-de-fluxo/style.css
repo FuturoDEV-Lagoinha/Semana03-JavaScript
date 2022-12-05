@@ -1,0 +1,59 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+section, article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 5px;
+}
+
+h3 {
+  margin: 20px 0 5px;
+  border-bottom: 1px solid #111;
+}
+
+div > p, li > p {
+  margin: 0px;
+}
+
+ul, li {
+  margin: 0 0 10px;
+}
+
+li > ul >li {
+  margin: 10px 0 15px;
+}
+
+code {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.practice {
+  width: 100px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  margin: 20px 0 5px;
+}
+
+.subtitle {
+  margin: 15px 0 5px;
+  font-weight: bolder;
+}

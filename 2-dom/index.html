@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Semana 03: JavaScript</title>
+</head>
+
+<body>
+  <header>
+    <h1>Manipulação de DOM</h1>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <section>
+
+      <h2 class="subtitulo">Porque aprender?</h2>
+      <p class="paragrafo-1">
+        Podemos utilizar o JavaScript (e suas funções) para manipular o HTML
+      </p>
+      <hr>
+
+      <p>Clique nos botões abaixo para criar e remover parágrafo</p>
+      <button id="btn-1" onclick="insereParagrafo()">
+        Criar parágrafo
+      </button>
+      <button onclick="removeParagrafo()"> Remover parágrafo</button>
+      <div id="resposta-clique-aqui"></div>
+      <br><hr>
+
+      <p>
+        Passe o mouse no botão abaixo para criar uma div e mudar a cor do primeiro botão para verde
+      </p>
+      <p>
+        Depois tire o mouse para remover a div e alterar a cor do botão para vermelho
+      </p>
+      <button id="btn-1" onmouseout="removerDiv()" onmouseover="voltaDiv()">
+        Passe o mouse
+      </button><br><br>
+      <div id="div-pai">
+        <div id="resposta-botao-remover-voltar">Sou uma div que tem que aparecer e sumir</div>
+      </div><br><hr>
+
+
+      <br><br />
+      <label for="meu-input">Digite:</label>
+      <input type="text" id="meu-input" placeholder="Escreva aqui">
+      <button onclick="imprimeInput()">
+        Clique e veja o resultado no console
+      </button>
+      <br><br><hr><br>
+
+      <p>O Botão abaixo não tem função (onclick), mas usar addEventListener</p>
+      <button id="terceiro-botao">
+        Terceiro botão
+      </button>
+      <div id="conteudo"></div><br />
+    </section>
+    <hr>
+
+    <section>
+      <h2 class="subtitulo">Funcionamento</h2>
+      <p>
+        O navegador lê e renderiza o HTML e, em seguida, cria um conjunto de
+        comandos.
+      </p>
+      <p>Para cada comando, o navegador executa a função correspondente:</p>
+      <ul>
+        <li>Acessar elementos</li>
+        <li>Alterar elementos</li>
+        <li>Adicionar elementos</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
+</html>

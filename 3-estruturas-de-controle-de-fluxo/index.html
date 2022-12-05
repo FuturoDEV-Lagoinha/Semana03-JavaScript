@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Semana 03: JavaScript</title>
+</head>
+
+<body>
+  <header>
+    <h1>Estruturas de controle de fluxo</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Condicional</h2>
+      <div>
+        <p>Se a condição for verdadeira, faça algo.</p>
+        <p>Se a condição for falsa, faça outra coisa.</p>
+      </div>
+
+      <p class="subtitle">Existem 2 formas de escrever esse tipo de condição.</p>
+      <ul>
+        <li>IF</li>
+        <ul>
+          <li><code> if (condição) { código } </code></li>
+          <li>
+            <p><code> if (condição) { código } else { código } </code></p>
+            <ul>
+              <li>OBS: também podemos escrever com o operador ternário: <code> condição ? código : código </code></li>
+            </ul>
+          </li>
+          <li> <code> if (condição) { código } else if (outra condição) { código } else { código } </code></li>
+        </ul>
+        <li>SWITCH CASE</li>
+      </ul>
+
+      <p class="practice">Área de prática</p><br>
+      <label for="age">Digite uma idade:</label>
+      <input type="number" id="age" name="number" min="0" max="99" value="19">
+      <button onclick="ifElse()" type="button">Verificar - IF ELSE</button>
+      <button onclick="switchCase()">Verificar - SWITCH CASE</button>
+      <p id="result"></p>
+
+    </section>
+
+    <section>
+      <h2>Repetição</h2>
+
+      <article>
+        <h3>WHILE / DO WHILE</h3>
+        <div>
+          <p>Enquanto a condição for verdadeira, faça algo.</p>
+          <p>Enquanto a condição for falsa, faça outra coisa.</p>
+        </div>
+
+        <p class="subtitle">Existem 2 formas de escrever esse tipo de condição.</p>
+        <ul>
+          <li>
+            <p>Forma 1 - WHILE: <code>while (condição) { código }</code></p>
+            <p>Verifica a condição e depois faz</p>
+          </li>
+          <li>
+            <p>Forma 2 - DO WHILE: <code>do { código } while (condição)</code></p>
+            <p>Faz e depois verifica a condição</p>
+          </li>
+        </ul>
+
+        <p class="practice">Área de prática</p>
+        <label for="while">Digite um número:</label>
+        <input type="number" id="while" value="0">
+        <button onclick="whileLoop()">Verificar While</button>
+        <button onclick="doWhileLoop()">Verificar Do While</button>
+        <button onclick="clearWhile()">Limpar</button>
+        <p id="while-result"></p>
+
+      </article>
+
+      <article>
+        <h3>FOR</h3>
+        <div>
+          <p>Para cada item da lista, faça algo.</p>
+        </div>
+
+        <p class="subtitle">Existem 3 formas de escrever esse tipo de condição.</p>
+        <ul>
+          <li>Forma 1 - FOR: <code>for (inicialização; condição; incremento) { código }</code></li>
+          <li>Forma 2 - FOR OF: <code>for (variável of lista) { código }</code></li>
+          <li>Forma 3 - FOREACH: <code>lista.forEach((variável) => { código })</code></li>
+        </ul>
+
+        <p class="practice">Área de prática</p>
+        <label for="for">Digite uma lista de frutas (separadas por vírgula):</label>
+        <input type="text" id="for" value="maçã, uva, pera">
+        <button onclick="forLoop()">Verificar For</button>
+        <button onclick="forOfLoop()">Verificar For Of</button>
+        <button onclick="forEachLoop()">Verificar For Each</button>
+        <button onclick="clearFor()">Limpar</button>
+        <p id="for-result"></p>
+      </article>
+
+    </section>
+  </main>
+</body>
+
+</html>
