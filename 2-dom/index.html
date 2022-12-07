@@ -26,10 +26,10 @@
       <hr>
 
       <p>Clique nos botões abaixo para criar e remover parágrafo</p>
-      <button id="btn-1" onclick="insereParagrafo()">
+      <button id="btn-1" onclick="inserirParagrafo()">
         Criar parágrafo
       </button>
-      <button onclick="removeParagrafo()"> Remover parágrafo</button>
+      <button onclick="removerParagrafo()"> Remover parágrafo</button>
       <div id="resposta-clique-aqui"></div>
       <br><hr>
 
@@ -39,22 +39,25 @@
       <p>
         Depois tire o mouse para remover a div e alterar a cor do botão para vermelho
       </p>
-      <button id="btn-1" onmouseout="removerDiv()" onmouseover="voltaDiv()">
+      <button id="btn-1" onmouseover="voltarDiv()" onmouseout="removerDiv()">
         Passe o mouse
       </button><br><br>
       <div id="div-pai">
-        <div id="resposta-botao-remover-voltar">Sou uma div que tem que aparecer e sumir</div>
+        <div id="resposta-botao-remover-voltar">
+          Sou uma div que tem que aparecer e sumir
+        </div>
       </div><br><hr>
 
 
       <br><br />
+      <div id="vinicius"></div>
       <label for="meu-input">Digite:</label>
       <input type="text" id="meu-input" placeholder="Escreva aqui">
-      <button onclick="imprimeInput()">
+      <button onclick="imprimirInput()">
         Clique e veja o resultado no console
       </button>
       <br><br><hr><br>
-
+      
       <p>O Botão abaixo não tem função (onclick), mas usar addEventListener</p>
       <button id="terceiro-botao">
         Terceiro botão

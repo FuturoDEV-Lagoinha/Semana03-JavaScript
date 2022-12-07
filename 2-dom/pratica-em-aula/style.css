@@ -1,0 +1,15 @@
+/* ============ estilizar pela tag */
+span {
+  color: blue;
+
+  /* só pra ficar mais legível*/
+  margin-right: 10px;
+}
+
+/* ============ estilizar pela classe */
+.texto-estilizacao {
+  color: red;
+
+  /* só pra ficar mais legível*/
+  margin-right: 10px;
+}
