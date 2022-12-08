@@ -5,4 +5,4 @@ Conteúdo ministrado na semana 03 do curso:
 - DOM
 - Estruturas de controle de fluxo
 - Rest e Spread
-- ES6 <3 
+- ES6
